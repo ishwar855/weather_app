@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1 class="app-title">Weather Now</h1>
+
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading">Loading...</div>
+
+    <!-- Weather Info -->
+    <div id="weatherInfo" class="weather-info">
+      <div id="weatherCard" class="weather-card">
+        <h2 id="cityName"></h2>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+        
+    <!-- Clock Display -->
+    <div id="current-time" class="clock"></div>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
